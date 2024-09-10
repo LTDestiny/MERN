@@ -20,12 +20,14 @@ function App() {
           <Route path="/" exact>
             <User />
           </Route>
+          {/* link to UserPlaces with userId*/}
           <Route path="/:userId/places" exact>
             <UserPlaces />
           </Route>
           <Route path="/places/new" exact>
             <NewPlaces />
           </Route>
+          {/* link to UpdatePlace with placeId */}
           <Route path="/places/:placeId">
             <UpdatePlace />
           </Route>

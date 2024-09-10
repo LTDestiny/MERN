@@ -33,6 +33,7 @@ const DUMMY_PLACES = [
 ];
 
 const UserPlaces = () => {
+  // catch :userId at App.js and filter the places by creator
   const userId = useParams().userId;
   const loaddedPlaces = DUMMY_PLACES.filter(
     (place) => place.creator === userId

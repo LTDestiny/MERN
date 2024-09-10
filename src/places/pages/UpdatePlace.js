@@ -111,6 +111,7 @@ export default function UpdatePlace() {
         label="Title"
         validators={[VALIDATOR_REQUIRE()]}
         errorText="Please enter a valid title."
+        // inputHandler will tranform data to Input component and catch id, value, isValid
         onInput={inputHandler}
         initialValue={formState.inputs.title.value}
         initialValid={formState.inputs.title.valid}
@@ -122,6 +123,7 @@ export default function UpdatePlace() {
         label="Description"
         validators={[VALIDATOR_MINLENGTH(5)]}
         errorText="Please enter a valid description ( min 5 characters )."
+        // inputHandler will tranform data to Input component and catch id, value, isValid
         onInput={inputHandler}
         initialValue={formState.inputs.description.value}
         initialValid={formState.inputs.description.valid}
