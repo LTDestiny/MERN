@@ -28,7 +28,7 @@ export default function MainNavigation() {
         </nav>
       </SideDrawer>
 
-      {/* Default MainNavigation.js if your screen max-width: 768px*/}
+      {/* Default MainNavigation.js if your screen min-width: 768px*/}
       <MainHeader>
         <button
           className="main-navigation__menu-btn"
